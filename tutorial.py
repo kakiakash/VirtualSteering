@@ -1,10 +1,11 @@
+#                                      
 # Step 1. Capturing the image.
 # Step 2. Convert rgb to hsv.
 # Step 3. Gaussian blur to the hsv converted image.
 # Step 4. Morphological transformations to the Gaussian blurred image.
 # Step 5. Searching contours
 # Step 6. Navigate the car.
-
+#  
 import cv2
 import imutils
 from imutils.video import VideoStream
@@ -24,7 +25,7 @@ while True:
     hsv = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
     blurred = cv2.GaussianBlur(hsv,(11,11),0)
 
-    colourLower = np.array([53,55,209])
+    colourLower = np.array([120,6,162])
     colourUpper = np.array([180,255,255])
 
     mask = cv2.inRange(blurred,colourLower,colourUpper)

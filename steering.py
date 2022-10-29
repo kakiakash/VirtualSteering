@@ -8,7 +8,6 @@ cam = VideoStream(src=0).start()
 currentKey = list()
 
 while True:
-
     key = False
 
     img = cam.read()
@@ -34,8 +33,6 @@ while True:
 
     cnts_up = cv2.findContours(upContour, cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
     cnts_up = imutils.grab_contours(cnts_up)
-
-
     cnts_down = cv2.findContours(downContour, cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
     cnts_down = imutils.grab_contours(cnts_down)
 
