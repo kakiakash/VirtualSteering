@@ -1,4 +1,4 @@
-# SteeringWheel
+# Steering Wheel
 An OpenCV based steering wheel to play racing games
 
 <br />
